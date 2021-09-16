@@ -1,0 +1,96 @@
+﻿=========================================================================
+App.xaml
+
+<Application.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button" x:Key="YellowButton">
+                <Setter Property="BackgroundColor" Value="Yellow"/>
+            </Style>
+        </ResourceDictionary>
+</Application.Resources>
+
+========================================================================
+App.xaml.cs
+
+    public partial class App : Application
+    {
+        public App()
+        {
+            InitializeComponent();
+
+            MainPage = new MainPage();
+        }
+
+        protected override void OnStart()
+        {
+            Debug.WriteLine(MethodBase.GetCurrentMethod().Name, "APP");
+        }
+
+        protected override void OnSleep()
+        {
+            Debug.WriteLine(MethodBase.GetCurrentMethod().Name);
+        }
+
+        protected override void OnResume()
+        {
+            Debug.WriteLine(MethodBase.GetCurrentMethod().Name);
+        }
+    }
+
+==========================================================================
+MainPage.xaml
+
+<ContentPage ...
+             Appearing="ContentPage_Appearing"
+             Disappearing="ContentPage_Disappearing">
+
+
+        <Button Text="OK" Clicked="OK_Clicked"/>
+        <Button Text="AppInfo" Clicked="AppInfo_Clicked"/>
+        <Button Text="Resources" Clicked="Resources_Clicked" 
+                Style="{StaticResource YellowButton}"/>
+</ContentPage>
+
+===========================================================================
+MainPage.xaml.cs
+
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+
+        private void OK_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Upozornění", MethodBase.GetCurrentMethod().Name, "Zpět");
+        }
+
+        private void AppInfo_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Upozornění", Application.Current.Properties["LastMainPageAppeared"].
+            ToString(), "Zpět");
+        }
+
+        private void ContentPage_Appearing(object sender, EventArgs e)
+        {
+            Debug.WriteLine($"MainPage appearing at {DateTime.Now}");
+            if (Application.Current.Properties.ContainsKey("LastMainPageAppeared") == false)
+                Application.Current.Properties.Add("LastMainPageAppeared", DateTime.Now);
+            else
+                Debug.WriteLine($"MainPage first time appeared at" +
+                    $" {Application.Current.Properties["LastMainPageAppeared"].ToString()}, 
+                    now is {DateTime.Now}");
+        }
+
+        private void ContentPage_Disappearing(object sender, EventArgs e)
+        {
+            Debug.WriteLine("MainPage disappearing");
+
+        }
+
+        private void Resources_Clicked(object sender, EventArgs e)
+        {
+            Debug.WriteLine($"Resources: {string.Join(",", Application.Current.Resources.Keys)}");
+        }
+    }
