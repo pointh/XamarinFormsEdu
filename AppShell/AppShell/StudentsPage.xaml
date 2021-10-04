@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppShell.StudentsPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="LightYellow" Padding="24" CornerRadius="0">
+            <Label Text="Studenti" HorizontalTextAlignment="Center" TextColor="LawnGreen" FontSize="36"/>
+        </Frame>
+        <Label Text="Novák 1.A" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Horák 1.A" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Slovák 1.A" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Polák 1.A" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Winterspoon 2.A" FontSize="Title" Padding="30,10,30,10"/>
+    </StackLayout>
+
+</ContentPage>

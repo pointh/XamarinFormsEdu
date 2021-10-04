@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="clr-namespace:AppShell"
+             x:Class="AppShell.ShellPage">
+    <Shell.FlyoutHeader>
+        <Frame BackgroundColor="Black">
+            <Label Text="SSPŠ" BackgroundColor="Black" TextColor="WhiteSmoke" Margin="30" FontSize="Large"/>
+        </Frame>
+    </Shell.FlyoutHeader>
+    <FlyoutItem Title="SSPŠ" FlyoutDisplayOptions="AsMultipleItems">
+        <Tab Title="Zaměstnanci" Icon="teacher.png">
+            <ShellContent Title="Učitelé" Icon="teacher.png">
+                <views:TeachersPage/>
+            </ShellContent>
+            <ShellContent Title="Údržbáři" Icon="services.png">
+                <views:MainPage/>
+            </ShellContent>
+            <ShellContent Title="Podpora" Icon="services.png">
+                <views:MainPage/>
+            </ShellContent>
+        </Tab>
+        <ShellContent Title="Studenti" Icon="student.png">
+            <views:StudentsPage/>
+        </ShellContent>
+    </FlyoutItem>
+
+    <MenuItem Text="Vypiš datum" Clicked="MenuItem_Clicked"/>
+</Shell>

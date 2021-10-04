@@ -20,12 +20,12 @@ namespace App1
 
         private void OK_Clicked(object sender, EventArgs e)
         {
-            DisplayAlert("Upozornění", MethodBase.GetCurrentMethod().Name, "Zpět");
+            DisplayAlert("Upozornění o volání", MethodBase.GetCurrentMethod().Name, "Zpět");
         }
 
         private void AppInfo_Clicked(object sender, EventArgs e)
         {
-            DisplayAlert("Upozornění", Application.Current.Properties["LastMainPageAppeared"].ToString(), "Zpět");
+            DisplayAlert("Upozornění o voláních", Application.Current.Properties["LastMainPageAppeared"].ToString(), "Zpět");
         }
 
         private void ContentPage_Appearing(object sender, EventArgs e)
