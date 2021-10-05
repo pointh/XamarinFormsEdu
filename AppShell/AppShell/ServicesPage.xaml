@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppShell.ServicesPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="DarkRed" Padding="24" CornerRadius="0">
+            <Label Text="Údržbáři" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Slavíček J." FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Tomášek P." FontSize="Title" Padding="30,10,30,10"/>
+    </StackLayout>
+
+</ContentPage>

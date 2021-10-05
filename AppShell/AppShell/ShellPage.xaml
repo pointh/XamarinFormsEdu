@@ -14,10 +14,10 @@
                 <views:TeachersPage/>
             </ShellContent>
             <ShellContent Title="Údržbáři" Icon="services.png">
-                <views:MainPage/>
+                <views:ServicesPage/>
             </ShellContent>
             <ShellContent Title="Podpora" Icon="services.png">
-                <views:MainPage/>
+                <views:SupportPage/>
             </ShellContent>
         </Tab>
         <ShellContent Title="Studenti" Icon="student.png">

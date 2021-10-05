@@ -19,7 +19,7 @@ namespace AppShell
 
         private void MenuItem_Clicked(object sender, EventArgs e)
         {
-            DisplayAlert("ČAS", $"{DateTime.Now.ToString()}", "OK");
+            DisplayAlert("ČAS", $"{DateTime.Now}", "OK");
         }
     }
 }
