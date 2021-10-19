@@ -5,10 +5,13 @@
              x:Class="AppShell.ShellPage">
     <Shell.FlyoutHeader>
         <Frame BackgroundColor="Black">
-            <Label Text="SSPŠ" BackgroundColor="Black" TextColor="WhiteSmoke" Margin="30" FontSize="Large"/>
+            <Label Text="Střední smíchovská průmyslová škola a gymnázium" 
+                   BackgroundColor="Black" TextColor="WhiteSmoke" 
+                   Margin="30" FontSize="Large"/>
         </Frame>
     </Shell.FlyoutHeader>
-    <FlyoutItem Title="SSPŠ" FlyoutDisplayOptions="AsMultipleItems">
+    <FlyoutItem 
+        Title="SSPŠ" FlyoutDisplayOptions="AsMultipleItems">
         <Tab Title="Zaměstnanci" Icon="teacher.png">
             <ShellContent Title="Učitelé" Icon="teacher.png">
                 <views:TeachersPage/>
@@ -24,6 +27,7 @@
             <views:StudentsPage/>
         </ShellContent>
     </FlyoutItem>
-
-    <MenuItem Text="Vypiš datum" Clicked="MenuItem_Clicked"/>
+    <MenuItem 
+        Text="Vypiš datum" Clicked="MenuItem_Clicked">
+    </MenuItem>
 </Shell>
