@@ -7,7 +7,7 @@
         <Frame BackgroundColor="DarkOliveGreen" Padding="24" CornerRadius="0">
             <Label Text="Učitelé" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
-        <ListView x:Name="TeachersListView" ItemsSource="{Binding TeachersList}">
+        <ListView x:Name="TeachersListView">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
