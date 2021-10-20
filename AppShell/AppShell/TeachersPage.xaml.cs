@@ -17,6 +17,7 @@ namespace AppShell
 
     public partial class TeachersPage : ContentPage, INotifyPropertyChanged
     {
+        // public List<Teacher> TeacherList {get; set;}
         public ObservableCollection<Teacher> TeachersList { get; set; }
         public TeachersPage()
         {
@@ -35,6 +36,8 @@ namespace AppShell
         private void AddButton_Clicked(object sender, EventArgs e)
         {
             TeachersList.Add(new Teacher { Degree = "NoTitle", Name = "NoName" });
+
+            //ObservableCollection řeší tuto škaredost
             //TeachersListView.ItemsSource = null;
             //TeachersListView.ItemsSource = this.TeachersList;
         }
