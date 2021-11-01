@@ -19,6 +19,7 @@ namespace AppShell
 
         private void MenuItem_Clicked(object sender, EventArgs e)
         {
+            FlyoutIsPresented = false;
             DisplayAlert("ČAS", $"{DateTime.Now.ToString()}", "OK");
         }
     }

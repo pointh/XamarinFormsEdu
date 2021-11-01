@@ -9,7 +9,7 @@
         </Frame>
     </Shell.FlyoutHeader>
     <FlyoutItem Title="SSPŠ" FlyoutDisplayOptions="AsMultipleItems">
-        <Tab Title="Zaměstnanci" Icon="teacher.png">
+        <!--Tab Title="Zaměstnanci" Icon="teacher.png"-->
             <ShellContent Title="Učitelé" Icon="teacher.png">
                 <views:TeachersPage/>
             </ShellContent>
@@ -19,7 +19,7 @@
             <ShellContent Title="Podpora" Icon="services.png">
                 <views:MainPage/>
             </ShellContent>
-        </Tab>
+        <!--/Tab -->
         <ShellContent Title="Studenti" Icon="student.png">
             <views:StudentsPage/>
         </ShellContent>

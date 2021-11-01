@@ -7,10 +7,20 @@
         <Frame BackgroundColor="DarkOliveGreen" Padding="24" CornerRadius="0">
             <Label Text="Učitelé" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
-        <Label Text="R. Sáblík" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Z. Nechanický" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Y. Scharnaglová" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="P. Švec" FontSize="Title" Padding="30,10,30,10"/>
+        <ListView x:Name="TeachersListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" BackgroundColor="AliceBlue">
+                            <Label Text="{Binding Degree}" TextColor="Gray" VerticalOptions="Center"/>
+                            <Label Text="{Binding Name}" TextColor="Gray" VerticalOptions="Center"/>
+                            <Button Text="Smaž"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button x:Name="AddButton" Text="Přidej učitele" Clicked="AddButton_Clicked"/>
     </StackLayout>
 
 </ContentPage>
