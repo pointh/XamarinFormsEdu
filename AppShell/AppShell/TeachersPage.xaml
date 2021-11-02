@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:view="clr-namespace:AppShell"
              x:Class="AppShell.TeachersPage">
 
     <StackLayout>
@@ -14,6 +15,10 @@
                         <StackLayout Orientation="Horizontal" BackgroundColor="AliceBlue">
                             <Label Text="{Binding Degree}" TextColor="Gray" VerticalOptions="Center"/>
                             <Label Text="{Binding Name}" TextColor="Gray" VerticalOptions="Center" />
+                            <ImageButton x:Name="DeleteButton" Padding="5, 5" 
+                                    Clicked="DeleteButton_Clicked" CommandParameter="{Binding .}"
+                                    HorizontalOptions="EndAndExpand"
+                                    Source="deleterow.png"/>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>

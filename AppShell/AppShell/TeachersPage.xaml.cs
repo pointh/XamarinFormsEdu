@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Rg.Plugins.Popup.Services;
+using System.Diagnostics;
 
 namespace AppShell
 {
@@ -45,6 +46,12 @@ namespace AppShell
             //ObservableCollection řeší tuto škaredost
             //TeachersListView.ItemsSource = null;
             //TeachersListView.ItemsSource = this.TeachersList;
+        }
+
+        private void DeleteButton_Clicked(object sender, EventArgs e)
+        {
+            ImageButton b = sender as ImageButton;
+            TeachersList.Remove(b.CommandParameter as Teacher);
         }
     }
 }

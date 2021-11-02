@@ -10,10 +10,10 @@
         <animations:ScaleAnimation 
             PositionIn="Center"
             PositionOut="Center"
-            ScaleIn="1.2"
-            ScaleOut="0.8"
-            DurationIn="400"
-            DurationOut="300"
+            ScaleIn="1.9"
+            ScaleOut="0.3"
+            DurationIn="800"
+            DurationOut="400"
             EasingIn="SinOut"
             EasingOut="SinIn"
             HasBackgroundAnimation="True"/>
@@ -24,8 +24,8 @@
         HorizontalOptions="Center" 
         Padding="20, 20, 20, 20">
         <Label Text="Nový učitel" TextColor="WhiteSmoke"/>
-        <Entry x:Name="EntryTitle" Text="Titul" TextColor="Black"/>
-        <Entry x:Name="EntryName" Text="Jméno a příjmení" TextColor="Black"/>
+        <Entry x:Name="EntryTitle" Placeholder="Titul" PlaceholderColor="DimGray" TextColor="Black"/>
+        <Entry x:Name="EntryName" Placeholder="Jméno a příjmení" PlaceholderColor="DimGray" TextColor="Black"/>
         <Button x:Name="ButtonSend" Text="Odeslat" TextColor="WhiteSmoke" Clicked="ButtonSend_Clicked"/>
     </StackLayout>
 </pages:PopupPage>
