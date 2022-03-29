@@ -5,8 +5,10 @@
              Appearing="ContentPage_Appearing"
              Disappearing="ContentPage_Disappearing">
 
-    <StackLayout x:Name="MainStackLayout" Orientation="Vertical">
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+        <ScrollView  VerticalScrollBarVisibility="Always">
+        <StackLayout x:Name="MainStackLayout" Orientation="Vertical">
+
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
             <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
         <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
@@ -24,7 +26,9 @@
         <Button Text="OK" Clicked="OK_Clicked"/>
         <Button Text="AppInfo" Clicked="AppInfo_Clicked"/>
         <Button Text="Resources" Clicked="Resources_Clicked" Style="{StaticResource YellowButton}"/>
-        <Entry x:Name="EntryJmeno" Text="Zadej jméno"/>
-    </StackLayout>
+        <Entry x:Name="EntryJmeno" Placeholder="Zadej jméno"/>
+        </StackLayout>
+
+    </ScrollView>
 
 </ContentPage>

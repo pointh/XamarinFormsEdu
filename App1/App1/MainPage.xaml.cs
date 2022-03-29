@@ -15,12 +15,11 @@ namespace App1
         public MainPage()
         {
             InitializeComponent();
-
         }
 
-        private void OK_Clicked(object sender, EventArgs e)
+        private async void OK_Clicked(object sender, EventArgs e)
         {
-            DisplayAlert("Upozornění o volání", MethodBase.GetCurrentMethod().Name, "Zpět");
+            await DisplayAlert("Upozornění o volání", MethodBase.GetCurrentMethod().Name, "Zpět");
         }
 
         private void AppInfo_Clicked(object sender, EventArgs e)
@@ -32,10 +31,14 @@ namespace App1
         {
             Debug.WriteLine($"MainPage appearing at {DateTime.Now}");
             if (Application.Current.Properties.ContainsKey("LastMainPageAppeared") == false)
+            {
                 Application.Current.Properties.Add("LastMainPageAppeared", DateTime.Now);
+            }
             else
+            {
                 Debug.WriteLine($"MainPage first time appeared at" +
                     $" {Application.Current.Properties["LastMainPageAppeared"].ToString()}, now is {DateTime.Now}");
+            }
         }
 
         private void ContentPage_Disappearing(object sender, EventArgs e)
@@ -50,9 +53,15 @@ namespace App1
 
             // Dynamicky generované tlačítko
             // MainStackLayout je StackLayout pojmenovaný v XAML filu.
-            Entry entry = new Entry() { Text = "Dynamicky generované tlačítko" };
-            MainStackLayout.Children.Add(entry);
+            Button b = new Button() { Text = "Zdravicí tlačítko" };
+            b.Clicked += B_Clicked;
+            MainStackLayout.Children.Add(b);
 
+        }
+
+        private async void B_Clicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Hello", $"Nazdar {EntryJmeno.Text}", "OK");
         }
     }
 }
