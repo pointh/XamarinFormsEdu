@@ -19,7 +19,6 @@ namespace AppShell
 
     public partial class TeachersPage : ContentPage
     {
-        // public List<Teacher> TeacherList {get; set;}
         public static ObservableCollection<Teacher> TeachersList { get; set; }
         public TeachersPage()
         {

@@ -22,9 +22,9 @@ namespace App1
             await DisplayAlert("Upozornění o volání", MethodBase.GetCurrentMethod().Name, "Zpět");
         }
 
-        private void AppInfo_Clicked(object sender, EventArgs e)
+        private async void AppInfo_Clicked(object sender, EventArgs e)
         {
-            DisplayAlert("Upozornění o voláních", Application.Current.Properties["LastMainPageAppeared"].ToString(), "Zpět");
+            await DisplayAlert("Upozornění o voláních", Application.Current.Properties["LastMainPageAppeared"].ToString(), "Zpět");
         }
 
         private void ContentPage_Appearing(object sender, EventArgs e)
