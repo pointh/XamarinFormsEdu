@@ -52,5 +52,10 @@ namespace AppShell
             ImageButton b = sender as ImageButton;
             TeachersList.Remove(b.CommandParameter as Teacher);
         }
+
+        private void TeachersListView_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            DisplayAlert("Učitel", (TeachersListView.SelectedItem as Teacher).Name, "OK");
+        }
     }
 }

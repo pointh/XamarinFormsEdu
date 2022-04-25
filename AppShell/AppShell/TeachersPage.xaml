@@ -8,7 +8,7 @@
         <Frame BackgroundColor="DarkOliveGreen" Padding="24" CornerRadius="0">
             <Label Text="Učitelé" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
-        <ListView x:Name="TeachersListView">
+        <ListView x:Name="TeachersListView" ItemTapped="TeachersListView_ItemTapped">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
