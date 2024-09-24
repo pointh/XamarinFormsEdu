@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiFormsEdu.SupportPage"
+             Title="SupportPage">
+    <StackLayout>
+        <Frame BackgroundColor="DimGray" Padding="24" CornerRadius="0">
+            <Label Text="IT Podpora" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Černohorský J." FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Karafiát J." FontSize="Title" Padding="30,10,30,10"/>
+    </StackLayout>
+</ContentPage>

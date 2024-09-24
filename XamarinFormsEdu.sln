@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31129.286
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App1.Android", "App1\App1.Android\App1.Android.csproj", "{C6740A3C-9BC3-4B83-AA55-B9C218FE2422}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppShell.Android", "AppShell\AppShell.Android\AppShell.Android.csproj", "{55AB3625-FE2F-49D0-9E9A-374C95BDB98A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppShell", "AppShell\AppShell\AppShell.csproj", "{715784C8-ED80-436F-8249-0B7FD020D8F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiFormsEdu", "MauiFormsEdu\MauiFormsEdu.csproj", "{0B9E38E0-E427-4DA4-9221-588E1538256E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -159,6 +161,42 @@ Global
 		{715784C8-ED80-436F-8249-0B7FD020D8F5}.Release|x64.Build.0 = Release|Any CPU
 		{715784C8-ED80-436F-8249-0B7FD020D8F5}.Release|x86.ActiveCfg = Release|Any CPU
 		{715784C8-ED80-436F-8249-0B7FD020D8F5}.Release|x86.Build.0 = Release|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Debug|ARM.Build.0 = Debug|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Debug|ARM.Deploy.0 = Debug|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Debug|iPhone.Deploy.0 = Debug|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Debug|iPhoneSimulator.Deploy.0 = Debug|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Debug|x64.Build.0 = Debug|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Debug|x64.Deploy.0 = Debug|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Debug|x86.Build.0 = Debug|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Debug|x86.Deploy.0 = Debug|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Release|ARM.ActiveCfg = Release|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Release|ARM.Build.0 = Release|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Release|ARM.Deploy.0 = Release|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Release|iPhone.Build.0 = Release|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Release|iPhone.Deploy.0 = Release|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Release|iPhoneSimulator.Deploy.0 = Release|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Release|x64.ActiveCfg = Release|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Release|x64.Build.0 = Release|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Release|x64.Deploy.0 = Release|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Release|x86.ActiveCfg = Release|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Release|x86.Build.0 = Release|Any CPU
+		{0B9E38E0-E427-4DA4-9221-588E1538256E}.Release|x86.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

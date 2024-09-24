@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiFormsEdu.TeachersPage"
+             Title="TeachersPage">
+    <StackLayout>
+        <Frame BackgroundColor="DarkOliveGreen" Padding="24" CornerRadius="0">
+            <Label Text="Učitelé" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <ListView x:Name="TeachersListView" ItemTapped="TeachersListView_ItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" BackgroundColor="AliceBlue">
+                            <Label Text="{Binding Degree}" TextColor="Gray" VerticalOptions="Center"/>
+                            <Label Text="{Binding Name}" TextColor="Gray" VerticalOptions="Center" />
+                            <ImageButton x:Name="DeleteButton" Padding="5, 5" 
+                                  Clicked="DeleteButton_Clicked" CommandParameter="{Binding .}"
+                                  HorizontalOptions="EndAndExpand"
+                                  Source="deleterow.png"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button x:Name="AddButton" Text="Přidej" Clicked="AddButton_Clicked"/>
+    </StackLayout>
+</ContentPage>
